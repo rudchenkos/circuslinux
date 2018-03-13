@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 find_package(PkgConfig REQUIRED)
 
-pkg_check_modules(SDL REQUIRED sdl SDL_image SDL_mixer)
+pkg_check_modules(SDL REQUIRED sdl2 SDL2_image SDL2_mixer)
 
 include_directories(${SDL_INCLUDE_DIRS})
 link_directories(${SDL_LIBRARY_DIRS})
